@@ -9,4 +9,6 @@ pluginManagement {
 rootProject.name = "KMMMainProject"
 include(":androidApp")
 include(":shared")
-include(":kmmLibraryProject:lib")
+include("lib")
+project(":lib").projectDir = file("kmmLibraryProject/lib")
+include("kmmLibraryProject:androidApp")

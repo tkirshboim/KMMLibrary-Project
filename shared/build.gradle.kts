@@ -19,7 +19,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(project(":kmmLibraryProject:lib"))
+                implementation(project(":lib"))
             }
         }
         val commonTest by getting {
